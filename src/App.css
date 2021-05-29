@@ -1,38 +1,257 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&family=Underdog&display=swap');
+
+
+.bg{
+  width: 100%;
+  height: 100vh;
+  background-color: #1c3b49;
+  padding: 1px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header{
+  width: 100%;
+  height: 24vh;
+  /* border: 1px solid #000000; */
+  justify-content: center;
+}
+.head-h1{
+  text-align: center; 
+  width: 100%;
+  margin: 0 auto;
+}
+h1{
+  font-size: 340%;
+  font-family: 'Underdog', cursive;
+}
+
+
+.head-h3{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  width: 100%;
+  height: 74vh;
+  /* border: 1px solid #000000; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .img-doge{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 70px;
+} */
+
+input{
+  display: block;
+  /* border: 8px solid #C0993A ; */
+  border: 8px solid #af851c;
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+  height: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons{
+  /* display: block; */
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-cheem{
+	background:linear-gradient(to bottom, #d8c686 5%, #d8ae16 100%);
+	background-color:#ecda96;
+	border-radius:22px;
+	border:2px solid #d8ae16;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:22px;
+	padding:15px 48px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #d8ae16;
+  margin: 0 10px 0 0;
+  font-family: 'Shippori Mincho', serif;
+}
+.btn-cheem:hover {
+	background:linear-gradient(to bottom, #d8ae16 5%, #d8c686 100%);
+	background-color:#ecda96;
+}
+.btn-cheem:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-clean{
+	background:linear-gradient(to bottom, #fcb4b4 5%, #fa1414 100%);
+	background-color:#fa1414;
+	border-radius:22px;
+	border:2px solid #fa1414;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:22px;
+	padding:15px 48px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+  font-family: 'Shippori Mincho', serif;
+  margin: 0 15px 0 0;
+}
+.btn-clean:hover {
+	background:linear-gradient(to bottom, #fa1414 5%, #fcb4b4 100%);
+	background-color:#fad643;
+}
+.btn-clean:active {
+	position:relative;
+	top:1px;
+}
+
+
+.btn-copy{
+	background-color:#44c767;
+	border-radius:11px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:12px;
+	padding: 7px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  font-family: 'Shippori Mincho', serif;
+  margin: 0 15px 0 0;
+}
+.btn-copy:hover {
+	background-color: #489422;
+}
+.btn-copy:active {
+	position:relative;
+	top:1px;
+}
+
+button{
+  display: inline;
+}
+
+.text-area{
+  width: 70%;
+  margin: 25px auto 0 25%;
+  height: max-content;
+
+}
+
+.text-area{
+  background: #FFFFFF;
+  width: 70%;
+  height: 40vh;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+footer{
+  background-color: #414141;
+  padding: 2px;
+}
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #cccccc;
+}
+.content-foot{
+  text-align: center;
+}
+
+.content-foot h4{
+  color: #ffffff;
+  border-bottom: 3px solid #0f9b0f;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.content-foot p{
+  color: #cccccc;
+}
+
+.titulo-final{
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #e2e2e2be;
+}
+
+img{
+  position: absolute;
+  padding: 1px;
+  opacity: 0.8;
+  width: 30%;
+  bottom: 0;
+}
+
+
+@media (max-width: 768px){
+
+  .header{
+    margin-top: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1{
+    font-size: 220%;
   }
+  h3{
+    font-size: 100%;
+  }
+
+  .app{
+    margin-top: -15px;
+  }
+
+  .contenedor-footer{
+    display: block;
+  }
+
+  .buttons{
+    display: inline-block;
+  }
+  .btn-cheem{
+    width: 30%;
+    margin: 15px 30% 15px 30%;
+    font-size:14px;
+  	padding: 3px 5px;
+  }
+  .btn-clean{
+    width: 30%;
+    margin: 0 30% 15px 30%;
+    font-size:14px;
+  	padding: 3px 5px;
+  }
+  .btn-copy{
+    width: 26%;
+    margin: 0 30% 0 30%;
+    font-size:10px;
+  	padding: 3px 3px;
+  }
+
+  .text-area{
+    width: 65%;
+    height: 30vh;
+  }
+
+
+  .content-foot p{
+    margin-bottom: 20px;
+  }
+  footer{
+    display: flexbox;
+  }
+
 }
